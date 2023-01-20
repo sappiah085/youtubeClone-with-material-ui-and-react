@@ -24,5 +24,17 @@ body {
 #root {
   height: 100vh;
   width: 100%;
+}
+.mySwiper {
+  width: 100% !important;
+  padding-left: 100px;
+  height: 50px;
+  align-items: center !important;
+}
 
+.swiper-slide {
+  width: fit-content !important;
+  align-items: center !important;
+  display: flex !important;
+  /* color: rgb(31, 30, 30); */
 }

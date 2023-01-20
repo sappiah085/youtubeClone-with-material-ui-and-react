@@ -4,15 +4,13 @@ export default function LittleSideMenu() {
   return (
     <Grid
       px={2}
-      mt={12}
-      pb={5}
       container
-      height={"100vh"}
       flexDirection={"column"}
       gap={2}
       flexWrap={"nowrap"}
       width={"140px"}
-      sx={{ overflowY: "scroll" }}
+      display={{ md: "flex", xs: "none" }}
+      alignItems={"center"}
     >
       {links.slice(0, 4).map(({ name, icon }, id) => (
         <Button
@@ -25,7 +23,7 @@ export default function LittleSideMenu() {
               backgroundColor: "#222222",
             },
             color: "white",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             gap: 2,
             textTransform: "capitalize",
             alignItems: "center",

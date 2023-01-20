@@ -277,7 +277,7 @@ export default function Navbar() {
   );
 
   return (
-    <Box bgcolor={"red"}  >
+    <Box   >
       <AppBar
         sx={{ backgroundColor: "#181818" }}
         elevation={0}
