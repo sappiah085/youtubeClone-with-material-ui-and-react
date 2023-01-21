@@ -36,5 +36,43 @@ body {
   width: fit-content !important;
   align-items: center !important;
   display: flex !important;
-  /* color: rgb(31, 30, 30); */
+}
+.video__player {
+  width: 100%;
+  cursor: pointer;
+}
+.my__input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  border-bottom: 1px solid grey;
+}
+.other__hovers {
+  --display: none;
+}
+.other__hovers:hover {
+  --display: block;
+}
+.progress {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.382);
+  height: 0.24em;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.progress div {
+  background-color: red;
+  width: 30%;
+  height: 100%;
+}
+.hover__video {
+  --opacity: 0;
+}
+.hover__video:hover {
+  --opacity: 1;
 }

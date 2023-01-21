@@ -3,7 +3,7 @@ import { links } from "../sideBar/links";
 export default function LittleSideMenu() {
   return (
     <Grid
-      px={2}
+      px={1}
       container
       flexDirection={"column"}
       gap={2}
