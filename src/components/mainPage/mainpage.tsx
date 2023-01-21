@@ -4,11 +4,17 @@ import Carro from "../carro/carro";
 import MovieCard from "../movieCards/movieCard";
 export default function MainPage() {
   return (
-    <Grid height={"100vh"} pt={12} pb={5} container flexWrap={"nowrap"}>
+    <Grid
+      width={"100%"}
+      height={"100vh"}
+      pt={12}
+      pb={5}
+      container
+      flexWrap={"nowrap"}
+    >
       <LittleSideMenu />
       <Grid
         container
-        maxWidth={"xl"}
         width={"100%"}
         height={"100%"}
         flexWrap={"nowrap"}

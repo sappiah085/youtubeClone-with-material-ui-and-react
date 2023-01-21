@@ -53,6 +53,7 @@ export default function Content() {
                 bottom: "12px",
                 opacity: "var(--opacity)",
                 transition: "all .5s ease",
+                width: "100%",
               }}
             >
               <div className="progress">
@@ -63,6 +64,7 @@ export default function Content() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  flexWrap: "wrap",
                 }}
               >
                 <Box
@@ -88,6 +90,7 @@ export default function Content() {
                       fontSize: "1rem",
                       display: "flex",
                       flexWrap: "nowrap",
+                      alignItems: "center",
                     }}
                   >
                     1:22 / 12:34 .{" "}
@@ -104,7 +107,7 @@ export default function Content() {
                 </Box>
                 <Box
                   sx={{
-                    display: "flex",
+                    display: { md: "flex", xs: "none" },
                     alignItems: "center",
                     flexWrap: "nowrap",
                   }}
