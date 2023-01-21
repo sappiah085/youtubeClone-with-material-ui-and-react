@@ -88,7 +88,6 @@ export default function MovieCard({
             fontSize: "1rem",
             padding: ".2em .2em",
             top: "-30px",
-            visibility: "var(--displayTime)",
           }}
         >
           3:15
@@ -97,7 +96,7 @@ export default function MovieCard({
           className="hover"
           style={{
             color: "white",
-            visibility: "var(--display)",
+
             backgroundColor: "rgba(0, 0, 0, 0.807)",
             borderRadius: "6px",
             zIndex: 900,

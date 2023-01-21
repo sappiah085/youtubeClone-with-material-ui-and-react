@@ -76,3 +76,10 @@ body {
 .hover__video:hover {
   --opacity: 1;
 }
+
+.time {
+  visibility: var(--displayTime);
+}
+.hover {
+  visibility: var(--display);
+}

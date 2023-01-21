@@ -328,7 +328,7 @@ export default function Content() {
                   className="my__input"
                   value={value}
                   placeholder="Add a comment"
-                  onInput={(e) => setValue(e.target.value)}
+                  onInput={(e) => setValue(e.currentTarget.value)}
                 />
                 {focus && (
                   <span
