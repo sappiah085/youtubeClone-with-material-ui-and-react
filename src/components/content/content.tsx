@@ -58,8 +58,20 @@ export default function Content() {
               <div className="progress">
                 <div></div>
               </div>
-              <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexWrap: "nowrap",
+                  }}
+                >
                   <IconButton sx={{ color: "white" }}>
                     <PauseIcon />
                   </IconButton>
@@ -74,6 +86,8 @@ export default function Content() {
                       color: "rgb(158, 156, 156)",
                       fontWeight: 200,
                       fontSize: "1rem",
+                      display: "flex",
+                      flexWrap: "nowrap",
                     }}
                   >
                     1:22 / 12:34 .{" "}
@@ -88,7 +102,13 @@ export default function Content() {
                     </Button>
                   </span>
                 </Box>
-                <Box sx={{ display: "flex" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexWrap: "nowrap",
+                  }}
+                >
                   <Switch />
                   <IconButton sx={{ color: "white" }}>
                     <ClosedCaptionOffIcon />
