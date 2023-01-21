@@ -15,7 +15,6 @@ export default function MainPage() {
       <LittleSideMenu />
       <Grid
         container
-        width={"100%"}
         height={"100%"}
         flexWrap={"nowrap"}
         flexDirection={"column"}
