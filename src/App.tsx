@@ -4,12 +4,13 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <Grid
-      maxWidth={"xl"}
+      maxWidth={"lg"}
       flexDirection={"column"}
       height={"100vh"}
       container
       bgcolor={"#181818"}
       flexWrap={"nowrap"}
+      overflow={"hidden"}
       alignItems={"flex-start"}
     >
       <Navbar />
