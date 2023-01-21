@@ -8,7 +8,7 @@ export default function LittleSideMenu() {
       flexDirection={"column"}
       gap={2}
       flexWrap={"nowrap"}
-      flex={1}
+      width={"140px"}
       display={{ md: "flex", xs: "none" }}
       alignItems={"center"}
     >

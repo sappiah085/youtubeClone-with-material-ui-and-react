@@ -49,7 +49,7 @@ export default function MovieCard({
       sx={{
         display: "flex",
         maxHeight: !flexDirection ? "400px" : "300px",
-        maxWidth: flexDirection ? "100%" : 300,
+        maxWidth: flexDirection ? "100%" : 290,
         flexDirection: flexDirection || "column",
         borderRadius: "15px",
         "--display": "collapse",
@@ -138,11 +138,23 @@ export default function MovieCard({
           >
             Lizards are a widespread group of squamate
             <br />
-            <span style={{ color: "rgb(158, 156, 156)", fontWeight: 200 }}>
+            <span
+              style={{
+                color: "rgb(158, 156, 156)",
+                fontWeight: 200,
+                fontSize: ".9rem",
+              }}
+            >
               RealmanTv
             </span>
             <br />
-            <span style={{ color: "rgb(158, 156, 156)", fontWeight: 200 }}>
+            <span
+              style={{
+                color: "rgb(158, 156, 156)",
+                fontWeight: 200,
+                fontSize: ".9rem",
+              }}
+            >
               1.7M views ° 11 months ago
             </span>
           </Typography>

@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Container } from "@mui/material";
 import LittleSideMenu from "../littleSideMenu/littleSideMenu";
 import Carro from "../carro/carro";
 import MovieCard from "../movieCards/movieCard";
@@ -13,30 +13,33 @@ export default function MainPage() {
       flexWrap={"nowrap"}
     >
       <LittleSideMenu />
-      <Grid
-        container
-        height={"100%"}
-        flexWrap={"nowrap"}
-        flexDirection={"column"}
-        flex={18}
+      <Container
+        disableGutters
+        sx={{ width: { md: "calc(100%-140px)", xs: "100%" }, margin: 0 }}
       >
-        <Carro />
         <Grid
           container
-          justifyContent={"center"}
-          alignItems={"center"}
-          width={"100%"}
-          gap={2}
-          rowGap={4}
-          py={6}
-          flexWrap={"wrap"}
-          sx={{ overflowY: "scroll", overflowX: "hidden" }}
+          height={"100%"}
+          flexWrap={"nowrap"}
+          flexDirection={"column"}
         >
-          {[1, 2, 3, 4].map((number, id) => (
-            <MovieCard id={id} key={id} />
-          ))}
+          <Carro />
+          <Grid
+            container
+            alignItems={"center"}
+            width={"100%"}
+            justifyContent={"center"}
+            gap={1.2}
+            py={6}
+            flexWrap={"wrap"}
+            sx={{ overflowY: "scroll"}}
+          >
+            {[1, 2, 3, 4].map((number, id) => (
+              <MovieCard id={id} key={id} />
+            ))}
+          </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </Grid>
   );
 }
