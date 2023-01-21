@@ -48,6 +48,7 @@ export default function MovieCard({
       onMouseLeave={pause}
       sx={{
         display: "flex",
+        maxHeight: !flexDirection ? "400px" : "300px",
         maxWidth: flexDirection ? "100%" : 300,
         flexDirection: flexDirection || "column",
         borderRadius: "15px",

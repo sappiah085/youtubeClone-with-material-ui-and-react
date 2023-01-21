@@ -388,7 +388,7 @@ export default function Content() {
                 )}
               </span>
             </Container>
-            {[1, 3, 4, 6].map((el, id) => (
+            {[1, 3].map((el, id) => (
               <Container
                 key={id}
                 sx={{
@@ -503,7 +503,7 @@ export default function Content() {
           minWidth={"320px"}
         >
           <Carro />
-          {[1, 2, 3, 4, 5].map((number, id) => (
+          {[1, 2, 3, 4].map((number, id) => (
             <span
               key={id}
               className="other__hovers"
