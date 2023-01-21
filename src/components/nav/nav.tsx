@@ -261,7 +261,7 @@ export default function Navbar() {
         </IconButton>
         <Box
           sx={{
-            display: !search ? "flex" : "none",
+            display: "flex",
             alignItems: "center",
             gap: 1,
           }}
@@ -277,7 +277,7 @@ export default function Navbar() {
   );
 
   return (
-    <Box   >
+    <Box>
       <AppBar
         sx={{ backgroundColor: "#181818" }}
         elevation={0}
@@ -344,6 +344,7 @@ export default function Navbar() {
                     borderRadius: 0,
                     height: "50px",
                     width: "60px",
+                    flex: 1,
                     "&:hover": {
                       backgroundColor: "#222222",
                     },
@@ -357,10 +358,11 @@ export default function Navbar() {
               )}
               <StyledInputBase
                 sx={{
-                  width: { md: "90%", xs: "120px" },
+                  width: { sm: "90%", xs: "120px" },
                   "&::placeholder": {
                     color: "#222222",
                   },
+                  flex: 6,
                 }}
                 placeholder="Search"
                 onFocus={() => setFocus(true)}
@@ -381,7 +383,8 @@ export default function Navbar() {
                   color: "white",
                   borderRadius: 0,
                   height: "50px",
-                  width: { md: "90px", sm: "10px" },
+
+                  flex: 1,
                   "&:hover": {
                     backgroundColor: "#222222",
                   },
