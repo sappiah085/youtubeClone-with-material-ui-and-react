@@ -18,6 +18,7 @@ export default function MainPage() {
         height={"100%"}
         flexWrap={"nowrap"}
         flexDirection={"column"}
+        flex={18}
       >
         <Carro />
         <Grid
