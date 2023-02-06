@@ -83,3 +83,7 @@ body {
 .hover {
   visibility: var(--display);
 }
+
+.hover__container:hover {
+  z-index: 3000;
+}

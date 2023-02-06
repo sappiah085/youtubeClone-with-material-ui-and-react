@@ -11,11 +11,16 @@ export default function MainPage() {
       pb={5}
       container
       flexWrap={"nowrap"}
+      justifyContent={"flex-start"}
     >
       <LittleSideMenu />
       <Container
         disableGutters
-        sx={{ width: { md: "calc(100%-140px)", xs: "100%" }, margin: 0 }}
+        sx={{
+          margin: 0,
+          p: 0,
+          minWidth: { xs: "100%", md: "91%" },
+        }}
       >
         <Grid
           container
@@ -32,7 +37,7 @@ export default function MainPage() {
             gap={1.2}
             py={6}
             flexWrap={"wrap"}
-            sx={{ overflowY: "scroll"}}
+            sx={{ overflowY: "scroll" }}
           >
             {[1, 2, 3, 4].map((number, id) => (
               <MovieCard id={id} key={id} />
